@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'open-sans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url('./OpenSans-Regular.woff2') format('woff2');
+}
+
+body {
+  background-color: #d2d2d2;
+  display: grid;
+  justify-content: center;
+  font-family: 'open sans';
+}
+
+.product-list {
+  display: grid;
+}
+
+.product-list table {
+  border-collapse: collapse;
+}
+
+.product-list thead {
+  color: #ffffff;
+}
+.product-list tfoot {
+  border-top: 1px dotted #000;
+  color: #000;
+  font-weight: bold;
+}
+
+.product-list tbody, .product-list p{
+  font-family: Lato-Regular;
+  font-size: 15px;
+  color: #808080;
+  line-height: 1.4;
+}
+
+.product-list th, .product-list td {
+  text-align: left;
+  padding: 20px;
+}
+
+.product-list th {
+  background-color: #eb008c;
+}
+
+.product-list th:first-child {
+  width: 300px;
+}
+
+.product-list th:last-child {
+  width: 100px;
+}
+
+.product-list tr:nth-child(2n) {
+  background-color: #f8f6ff;
+}
+
+.product-list tr:nth-child(2n+1) {
+  background-color: #fff;
+}
+
+.product-list td:last-child {
+  text-align: right;
+}
+
+/* add bem styling */
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search .search__input {
+  box-sizing: border-box;;
+  margin-bottom: 5px;
+  padding: 3px 8px;
+  color: #000;
+  border: 1px solid #eb008c;
+  border-radius: 4px;
+  line-height: 24px;
+  outline: none;
+  flex-grow: 1;
+}
+
+.search .search__label {
+  padding-right: 10px;
+}
